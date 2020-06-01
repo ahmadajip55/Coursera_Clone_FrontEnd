@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* =========== Header =========== */
+.navbarHeader {
+    padding: 1rem !important;
+    border-bottom: 0.4px solid #d9d7d7;
+}
+
+.logoCourseraHeader {
+    width: 127px;
+    height: 32px;
+}
+
+.forEntrepriseHeader {
+   color : black !important;
+}
+
+.forEntrepriseHeader:hover {
+    color: blue !important;
+}
+
+
+
+/* =========== sidebar =========== */
+.sidebar {
+    margin: 0;
+    padding-bottom: 200px !important;
+    padding: 0;
+    width: 275px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebarCourse {
+    margin-right: 97px;
+    margin-left: 97px;
+}
+
+.sidebarCourse img{
+    margin-top: 36px;
+    margin-bottom: 16px;
+    height: 80px;
+    width: 80px;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    padding-left: 56px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sidebar Accordion {
+    display: block;
+    color: black;
+    padding: 16px;
+    padding-left: 56px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sidebar Accordion Accordion.Toggle {
+    width: 300px !important;
+}
+  
+.sidebar a:hover:not(.active) {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+  }
+
+
+
+/* ========== cardintro ========= */
+.cardIntro {
+    border-radius: 0px !important;
+    margin-bottom: 2rem;
+}
+
+.cardIntroHeader {
+    background-color: rgb(102, 102, 102) !important;
+    border-radius: 0px !important;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.cardIntroBody {
+    padding: 36px !important;
+}
+
+.cardIntroTitle {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    line-height: 30px !important;
+}
+
+.cardIntroButton {
+    border-radius: 0px !important;
+    padding: 12px 36px !important;
+}
+
+
+
+/* ========= accordionWeek ======== */
+.accordionWeekCard {
+    border-radius: 0px;
+    margin-bottom: 30px;
+}
+
+.accordionWeekLink {
+    text-decoration: none !important;
+}
+
+.accordionWeekHeaderWeek {
+    border-radius: 0px !important;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+
+.accordionWeekHeaderTime {
+    border-radius: 0px !important;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+    text-align: right;
+}
+
+#accordionWeekSubmodul {
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+#accordionWeekCategory {
+    border-right: 1px solid rgb(216, 216, 216) !important;
+    text-align: right;
+    padding: 1rem;
+}
+
+#accordionWeekQuiz {
+    text-align: left;
+    padding: 1rem;
+    padding-top: 0px;
+}
+
+Table {
+    padding: 0px;
+} 
+
+@media screen and (max-width: 700px) {
+    #accordionWeekCategory {
+        border-right: none !important;
+        border-bottom: 1px solid rgb(216, 216, 216) !important;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    #accordionWeekCategory {
+        border-right: none !important;
+        border-bottom: 1px solid rgb(216, 216, 216) !important;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+
+
+
+/* ========= Jumbotron Enroll ========= */
+.jumbotronEnrollPage {
+    margin-top: 72px !important;
+}
+
+.jumbotronEnroll {
+    background-image: linear-gradient(90deg, rgb(0, 53, 107), rgb(221, 221, 221)) !important;
+    border-radius: 0px !important;
+    padding: 3rem 1rem !important;
+}
+
+ul.breadcrumbJumbotron {
+    padding: 0px;
+    margin-bottom: 30px;
+    list-style: none;
+    background-color: transparent;
+  }
+
+ul.breadcrumbJumbotron li {
+    display: inline;
+    font-size: 14px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+  }
+
+ul.breadcrumbJumbotron li+li:before {
+    padding: 8px;
+    color: white;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    content: "\00a0>\00a0";
+  }
+
+ul.breadcrumbJumbotron li a {
+    color: white;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+ul.breadcrumbJumbotron li a:hover {
+    text-decoration: underline;
+  }
+
+.jumbotronEnroll h1 {
+    color: white;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotronEnroll span {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotronEnroll p {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotronEnroll p Button {
+    border-radius: 0px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+
+
+
+/* ========== Modal Login ========== */
+.modal {
+    transform: scale(1);
+    overflow: hidden;
+    animation: bondJamesBond 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes bondJamesBond {
+    0% {
+      transform: translateX(1000px);
+    }
+}
+
+.modalLoginHeader {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    color: #fff;
+}
+
+.modalLoginTitle {
+    text-align: center;
+}
+
+.close {
+    margin: -1rem !important;
+}
+
+.modal-content {
+    padding: 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.modal-body {
+    background-color: transparent !important;
+}
+
+.modal-dialog {
+    margin: 0px !important;
+    max-width: none !important;
+}
+
+.modalLoginTitle p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.modalLoginBody {
+    color: black;
+    width: 400px;
+    height: 725px;
+    background-color: white !important;
+    padding: 2rem !important;
+}
+
+
+
+/* ========== Breadcrumb Supplement =========== */
+.rowBreadcrumbSupplement {
+    padding: 85px 1rem 0 1rem;
+    z-index: 1000;
+    border-bottom: 0.4px solid #d9d7d7 !important;
+    position: fixed;
+    width: 100%;
+    background-color: white !important;
+}
+
+.breadcrumbSupplement ul {
+    padding: 0px;
+    list-style: none;
+  }
+
+.breadcrumbSupplement ul li {
+    display: inline;
+    font-size: 12px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.breadcrumbSupplement ul li+li:before {
+    padding: 8px;
+    color: blue;
+    font-family: 'Open Sans', sans-serif;
+    content: ">";
+  }
+
+.breadcrumbSupplement ul li a {
+    color: blue;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.breadcrumbSupplement ul li a:hover {
+    text-decoration: underline;
+  }
+
+
+
+/* ========== sidebar Supplement =========== */
+.sidebarSupplement {
+    margin-top: 130px !important;
+    padding-bottom: 200px !important;
+    padding: 0;
+    width: 275px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: 3px solid #f1f1f1;
+}
+
+.sidebarSupplement a {
+    display: block;
+    color: black;
+    padding: 16px;
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#contentSidebarSupplement {
+    padding-left: 50px;
+    font-size: 12px;
+    font-weight: normal;
+}
+  
+.sidebarSupplement a:hover:not(.active) {
+    text-decoration: none;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+
+/* ========== Content Supplement ========= */
+.contentSupplement {
+    margin-top: 175px;
+    border-bottom: 0.4px solid #d9d7d7;
+}
+
+.namePointContentSupplement {
+    /* margin-left: 50px; */
+    margin-right: 25px;
+    border-bottom: 0.4px solid #d9d7d7;
+}
+
+.namePointContentSupplement p {
+    font-size: 2.125rem;
+    margin-bottom: 0.5rem;
+    font-weight: 50;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fillNamePointContentSupplement p {
+    /* margin-left: 50px; */
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* ========== Quiz Supplement ========= */
+.quizSupplement {
+    margin-left: 50px;
+    margin-top: 175px;
+    border-bottom: 0.4px solid #d9d7d7;
+}
+
+@media screen and (max-width: 700px) {
+    .rightBreadcrumbSupplement{
+        display: none;
+    }
+    .sidebarSupplement {
+      display: none;
+    }
+    .contentSupplement {
+        margin-left: 10px;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    .rightBreadcrumbSupplement{
+        display: none;
+    }
+    .sidebarSupplement {
+        display: none;
+    }
+    .contentSupplement {
+        margin-left: 10px;
+    }
+}
+
+
+
+/* ========= Modal Quiz ========== */
+.modalQuiz {
+    padding-left: 0px !important;
+    border-radius: 0px;
+}
+
+.modalQuizHeader {
+    background-color: white;
+    padding: 0 !important;
+    border-radius: 0px !important;
+    border-bottom: 1px solid rgb(189, 189, 189) !important;
+}
+
+.modalQuizBody {
+    background-color: white !important;
+}
+
+.quizQuestion {
+    margin-top: 4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nameQuizQuestion {
+    border-bottom: 0.4px solid #d9d7d7;
+}
+
+.contentQuizQuestion {
+    margin-top: 1rem;
+    border-bottom: 0.4px solid #d9d7d7
+}
+
+.buttonQuizQuestion {
+    text-align: right;
+    margin-top: 1rem !important;
+}
+
+.buttonQuizQuestion Button {
+    padding: 1rem 4rem;
+}
+
+.questionChoice {
+    margin: 3rem 0;
+}
+
+
+
+
+/* ========== page Welcome ========== */
+div.content {
+    margin-top: 72px;
+    margin-left: 275px;
+    padding: 1px 16px;
+    height: 100%;
+  }
+
+.nameCourse {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.course {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+  
+@media screen and (max-width: 700px) {
+    div.content {
+        margin-left: 0px;
+    }
+    .sidebar {
+      display: none;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    div.content {
+        margin-left: 0px;
+    }
+    .sidebar {
+        display: none;
+    }
+}
