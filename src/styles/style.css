@@ -138,7 +138,23 @@
 #accordionWeekCategory {
     border-right: 1px solid rgb(216, 216, 216) !important;
     text-align: right;
-    padding: 1rem;
+    padding: 2.7rem 1rem;
+}
+
+#contentCategoryCourse:hover {
+    background-color: #f1f1f1;
+}
+
+Table tbody {
+    cursor: pointer;
+}
+
+Table tbody:hover {
+    background-color: #f1f1f1;
+}
+
+#contentCategoryCourse {
+    color: black;
 }
 
 #accordionWeekQuiz {

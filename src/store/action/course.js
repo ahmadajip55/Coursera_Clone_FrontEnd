@@ -1,11 +1,11 @@
 import axios from "axios"
 
-export const getCourse = () => {
+export const getCourse = (id) => {
     return async (dispatch) => {
         try {
             const response = await axios.get("http://0.0.0.0:5000/content/category", {
                 params: {
-                    course_id: 1
+                    course_id: id
                 }
             })
             localStorage.setItem("test", "ajay")

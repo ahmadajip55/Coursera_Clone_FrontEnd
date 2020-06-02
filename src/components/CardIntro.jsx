@@ -6,6 +6,7 @@ import { Card, Button, Row, Col } from "react-bootstrap";
 const CardIntro = () => {
     return (
         <Card className="cardIntro">
+            {/* <Card.Header className="cardIntroHeader">WEEK 1</Card.Header> */}
             <Card.Header className="cardIntroHeader">WEEK 1</Card.Header>
             <Card.Body className="cardIntroBody">
                 <Row>

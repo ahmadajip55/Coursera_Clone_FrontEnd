@@ -15,7 +15,8 @@ import {
 
 class Welcome extends Component {
     componentDidMount = async () => {
-        this.props.getCourse()
+        const paramsIdCourse = await this.props.match.params.id
+        this.props.getCourse(paramsIdCourse)
     }
 
     render() {

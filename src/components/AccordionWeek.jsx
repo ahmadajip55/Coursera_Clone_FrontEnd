@@ -20,7 +20,7 @@ const AccordionWeek = (props) => {
                                                 <span className="accordionWeekHeaderWeek">{element.name_week}</span>
                                             </Col>
                                             <Col lg={{ span: 4, offset: 5 }}>
-                                                <span className="accordionWeekHeaderTime">Estimated Time: 2h 17m</span>
+                                                <span className="accordionWeekHeaderTime">Estimated Time: {parseInt(element.total_duration_minute / 60)} h {element.total_duration_minute % 60} min</span>
                                             </Col>
                                         </Row>
                                     </div>
@@ -33,8 +33,13 @@ const AccordionWeek = (props) => {
                                         <Row>
                                             <Col className="p-0" lg={5}>
                                                 <div id="accordionWeekCategory">
-                                                    <div className="mb-4">Video &nbsp; <i class="far fa-circle"></i><strong> &nbsp; 1h 50m left</strong></div>
-                                                    <div className="mb-4">Reading &nbsp; <i class="far fa-circle"></i><strong> &nbsp; 1h 50m left</strong></div>
+                                                    {Object.keys(element.content_duration_minute).map((keys, index) =>
+                                                        <div className="text-decoration-none">
+                                                            <Link className="text-decoration-none">
+                                                                <div className="py-3" id="contentCategoryCourse">{keys} &nbsp; <i class="far fa-circle"></i><strong> &nbsp; {parseInt(element.content_duration_minute[keys] / 60)} h {element.content_duration_minute[keys] % 60} min left</strong></div>
+                                                            </Link>
+                                                        </div>
+                                                    )}
                                                 </div>
                                             </Col>
                                             <Col className="p-0" lg={7}>
@@ -52,9 +57,9 @@ const AccordionWeek = (props) => {
                                                                 <td>
                                                                     <span><strong>Quiz</strong></span>
                                                                     <br />
-                                                                    <span>Foundations</span>
+                                                                    <span>{element.name_modul}</span>
                                                                     <br />
-                                                                    <span><strong>30 min</strong></span>
+                                                                    <span><strong>{parseInt(element.quiz_duration_minute / 60)} h {element.quiz_duration_minute % 60} min</strong></span>
                                                                 </td>
                                                                 <td></td>
                                                                 <td>

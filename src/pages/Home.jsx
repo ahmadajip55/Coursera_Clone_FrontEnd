@@ -14,7 +14,7 @@ class Home extends Component {
     handleRequest = async () => {
         const isLogin = localStorage.getItem("token")
         if (isLogin) {
-            await this.props.history.replace("/welcome")
+            await this.props.history.replace("/welcome/1")
         }
         else {
             alert("Login First !")
