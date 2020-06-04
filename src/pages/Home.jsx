@@ -11,7 +11,7 @@ import {
 } from "../store/action/course"
 
 class Home extends Component {
-    handleRequest = async () => {
+    handleRequestToWelcome = async () => {
         const isLogin = localStorage.getItem("token")
         if (isLogin) {
             await this.props.history.replace("/welcome/1")
@@ -20,11 +20,12 @@ class Home extends Component {
             alert("Login First !")
         }
     }
+
     render() {
         return (
             <React.Fragment>
                 <Header {...this.props} />
-                <JumbotronEnroll handleRequest={() => this.handleRequest()} />
+                <JumbotronEnroll handleRequestToWelcome={() => this.handleRequestToWelcome()} />
             </React.Fragment>
         )
     }

@@ -1,5 +1,7 @@
 const initialState = {
-    course: ""
+    course: "",
+    content: "",
+    week: ""
 }
 
 export default function courseReducer(courseState = initialState, action) {
@@ -8,6 +10,16 @@ export default function courseReducer(courseState = initialState, action) {
             return {
                 ...courseState,
                 course: action.payload
+            }
+        case "GET_WEEK":
+            return {
+                ...courseState,
+                week: action.payload
+            }
+        case "GET_SUBMODUL":
+            return {
+                ...courseState,
+                submodul: action.payload
             }
         default:
             return courseState

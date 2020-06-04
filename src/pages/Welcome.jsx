@@ -19,6 +19,10 @@ class Welcome extends Component {
         this.props.getCourse(paramsIdCourse)
     }
 
+    // handleRequestToSupplement = async (id) => {
+    //     await this.props.history.replace("/supplement" + id)
+    // }
+
     render() {
         const isLogin = localStorage.getItem("token")
         console.log("CEEKPROPSWELCOME", this.props)

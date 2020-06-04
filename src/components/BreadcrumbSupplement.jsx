@@ -3,15 +3,16 @@ import "../styles/style.css"
 import { Row, Col } from "react-bootstrap";
 
 
-const BreadcrumbSupplement = () => {
+const BreadcrumbSupplement = (props) => {
+    console.log("CEEK BREADCRUMB", props)
     return (
         <div className="rowBreadcrumbSupplement">
             <Row>
                 <Col lg={6}>
                     <div className="breadcrumbSupplement">
                         <ul>
-                            <li><a href=".#">Introduction to Geology</a></li>
-                            <li><a href=".#">Week 2</a></li>
+                            <li><a href="/welcome/1">Introduction to Geology</a></li>
+                            <li><a href=".#">{props.dataWeek.name_week}</a></li>
                             <li>Kinematic Analysis</li>
                         </ul>
                     </div>

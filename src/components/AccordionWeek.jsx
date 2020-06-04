@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 const AccordionWeek = (props) => {
     console.log("ACCORDIONWEEKK", props)
+    const changeRouter = async (id) => {
+        props.history.replace("/supplement/" + id)
+    }
     return (
         <div>
             {props.dataCourse.course ? props.dataCourse.course.map((element) =>
@@ -33,11 +36,9 @@ const AccordionWeek = (props) => {
                                         <Row>
                                             <Col className="p-0" lg={5}>
                                                 <div id="accordionWeekCategory">
-                                                    {Object.keys(element.content_duration_minute).map((keys, index) =>
-                                                        <div className="text-decoration-none">
-                                                            <Link className="text-decoration-none">
-                                                                <div className="py-3" id="contentCategoryCourse">{keys} &nbsp; <i class="far fa-circle"></i><strong> &nbsp; {parseInt(element.content_duration_minute[keys] / 60)} h {element.content_duration_minute[keys] % 60} min left</strong></div>
-                                                            </Link>
+                                                    {Object.keys(element.content_duration_minute).map((keys) =>
+                                                        <div>
+                                                            <div className="py-3" id="contentCategoryCourse" onClick={() => changeRouter(element.week_id)}>{keys} &nbsp; <i class="far fa-circle"></i><strong> &nbsp; {parseInt(element.content_duration_minute[keys] / 60)} h {element.content_duration_minute[keys] % 60} min left</strong></div>
                                                         </div>
                                                     )}
                                                 </div>
@@ -52,7 +53,7 @@ const AccordionWeek = (props) => {
                                                                 <th>Due</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody onClick={() => changeRouter(1)}>
                                                             <tr>
                                                                 <td>
                                                                     <span><strong>Quiz</strong></span>
